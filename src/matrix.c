@@ -76,7 +76,7 @@ MatStatus mat_read(FILE *in, Matrix **out) {
     return MAT_ERR_NULL;
 }
 
-MatStatus mat_save(const char *path, Matrix **out) {
+MatStatus mat_load(const char *path, Matrix **out) {
     (void)path;
     if (out != NULL) {
         *out = NULL;
